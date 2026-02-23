@@ -5,17 +5,10 @@ body {
     background-color: #F8F9FA;
 }
 
-/* Header */
 .header-section {
     padding: 1.5rem 1rem;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-    .header-section {
-        padding: 1.5rem 2.5rem;
-    }
 }
 
 .page-title {
@@ -27,7 +20,6 @@ body {
     margin: 0;
 }
 
-/* Main Container */
 .main-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -35,13 +27,6 @@ body {
     padding-bottom: 2.5rem;
 }
 
-@media (min-width: 768px) {
-    .main-container {
-        padding: 0 2.5rem 2.5rem 2.5rem;
-    }
-}
-
-/* Dashboard Grid */
 .dashboard-grid {
     display: grid;
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -49,12 +34,6 @@ body {
     margin-bottom: 2.5rem;
     border-bottom: 2px dashed #e5e7eb;
     padding-bottom: 2.5rem;
-}
-
-@media (min-width: 768px) {
-    .dashboard-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
 }
 
 .dashboard-card {
@@ -97,7 +76,7 @@ body {
     margin: 0;
 }
 
-/* Available Jobs Header */
+
 .jobs-header {
     display: flex;
     justify-content: space-between;
@@ -119,7 +98,6 @@ body {
     margin: 0;
 }
 
-/* Tabs */
 .tabs-container {
     display: flex;
     gap: 0.5rem;
@@ -156,7 +134,7 @@ body {
     background-color: #4285F4;
 }
 
-/* Empty State */
+
 .empty-state {
     background-color: white;
     border-radius: 0.5rem;
@@ -194,7 +172,7 @@ body {
     display: none !important;
 }
 
-/* Job Cards */
+
 .job-cards-grid {
     display: flex;
     flex-direction: column;
@@ -297,7 +275,6 @@ body {
     border-color: #ef4444;
 }
 
-/* Custom Action Buttons */
 .card-actions {
     display: flex;
     gap: 0.5rem;
@@ -339,4 +316,19 @@ body {
 .btn-rejected.selected {
     background-color: #FF6B6B;
     color: white;
+}
+
+/* Mobile Responsive */
+@media (min-width: 768px) {
+    .header-section {
+        padding: 1.5rem 2.5rem;
+    }
+
+    .main-container {
+        padding: 0 2.5rem 2.5rem 2.5rem;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
