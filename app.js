@@ -247,7 +247,7 @@ function renderJobs() {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+window.onload = function () {
     updateDashboard();
     renderJobs();
-});
+};
